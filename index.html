@@ -3,15 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Portfolio</title>
+    <meta
+      name="description"
+      content="Suryakant is a frontend developer who designs accessible, thoughtful web experiences."
+    />
+    <title>Mukul | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Hello This is Me</h1>
-      <p>Welcome to this Frontend Development course</p>
-      <button onclick="showMessage()">Say Hello</button>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="#home" class="logo" aria-label="Suryakant home"
+          >MT<span>.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span class="sr-only">Toggle navigation</span><span></span
+          ><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li>
+            <a href="#contact" class="nav-cta"
+              >Let's talk <span aria-hidden="true">↗</span></a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
+    <main id="main-content">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span></span> Available for opportunities</p>
+          <h1 id="hero-title">
+            Building the web with <em>care</em> &amp; curiosity.
+          </h1>
+          <p class="hero-description">
+            I'm Mukul, a frontend developer focused on turning thoughtful ideas
+            into fast, accessible digital experiences.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn"
+              >Explore my work <span aria-hidden="true">↓</span></a
+            ><a href="#contact" class="text-link"
+              >Get in touch <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div
+          class="hero-visual reveal"
+          aria-label="Decorative personal monogram"
+        >
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="portrait">
+            <span>SK</span><small>Frontend<br />developer</small>
+          </div>
+          <div class="availability-card">
+            <span class="status-dot"></span>
+            <div>
+              <strong>Currently</strong><small>Learning &amp; building</small>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about"
+          >Scroll to discover <span aria-hidden="true">↓</span></a
+        >
+      </section>
+      <section id="about" class="section about-section">
+        <div class="section-label reveal">01 / About</div>
+        <div class="about-copy reveal">
+          <h2>I enjoy making the complicated feel <em>simple.</em></h2>
+          <div>
+            <p>
+              I'm a Computer Science student with a love for clean interfaces,
+              meaningful details, and the craft behind a great user experience.
+            </p>
+            <p>
+              When I'm not at my desk, I'm exploring new tools, improving my
+              problem-solving skills, and looking for the next useful thing to
+              build.
+            </p>
+          </div>
+        </div>
+        <div class="stats reveal" aria-label="Portfolio highlights">
+          <div>
+            <strong>03<span>+</span></strong
+            ><small>Projects built</small>
+          </div>
+          <div>
+            <strong>05<span>+</span></strong
+            ><small>Core tools</small>
+          </div>
+          <div><strong>∞</strong><small>Things to learn</small></div>
+        </div>
+      </section>
+      <section id="skills" class="section skills-section">
+        <div class="section-heading reveal">
+          <div class="section-label">02 / Toolkit</div>
+          <h2>The tools I use to bring ideas to life.</h2>
+        </div>
+        <ul class="skills-list reveal">
+          <li><span>01</span> HTML5</li>
+          <li><span>02</span> CSS3</li>
+          <li><span>03</span> JavaScript</li>
+          <li><span>04</span> React</li>
+          <li><span>05</span> Git &amp; GitHub</li>
+        </ul>
+      </section>
+      <section id="projects" class="section projects-section">
+        <div class="section-heading reveal">
+          <div class="section-label">03 / Selected work</div>
+          <h2>A few things I've enjoyed creating.</h2>
+        </div>
+        <div class="projects">
+          <article class="project-card project-featured reveal">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <p class="project-type">Career platform</p>
+              <h3>JobGenie</h3>
+              <p>
+                A focused platform that helps students find relevant
+                opportunities and take their first career step with confidence.
+              </p>
+              <ul class="tags">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>UI Design</li>
+              </ul>
+              <a href="#contact" class="project-link"
+                >Discuss this project <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="project-art art-job" aria-hidden="true">
+              <div class="window">
+                <i></i><i></i><i></i><b>Find your next move.</b><span></span
+                ><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <p class="project-type">Learning platform</p>
+            <h3>SkillTrek</h3>
+            <p>
+              A practical learning companion designed to help students make
+              steady progress on technical skills.
+            </p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a href="#contact" class="project-link"
+              >View case study <span aria-hidden="true">↗</span></a
+            >
+          </article>
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <p class="project-type">Security SaaS</p>
+            <h3>Kavach</h3>
+            <p>
+              A security-first SaaS concept that makes digital protection more
+              approachable for everyday teams.
+            </p>
+            <ul class="tags">
+              <li>React</li>
+              <li>UX Research</li>
+              <li>Figma</li>
+            </ul>
+            <a href="#contact" class="project-link"
+              >View case study <span aria-hidden="true">↗</span></a
+            >
+          </article>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="contact-inner reveal">
+          <p class="section-label">04 / Contact</p>
+          <h2>Have an idea?<br /><em>Let's make it real.</em></h2>
+          <p>
+            I'm always open to discussing a new project, a creative idea, or an
+            opportunity to collaborate.
+          </p>
+          <a class="contact-email" href="mailto:workwithmukool.com"
+            >hello@mukul.dev <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© <span id="year">2026</span> Mukul. Built with intention.</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
